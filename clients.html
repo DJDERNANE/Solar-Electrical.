@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+      background-color: #fff;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-button-prev:after,.swiper-button-prev:after{
+    color: #fcc001;
+}
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    color: #fcc001;
+}
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+   
+    .monials{
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+    }
+.monials img{
+    height: 100px;
+    width: 100px;
+    margin: auto;
+}
+.monials .stars{
+    text-align: center;
+    display: flex;
+}
+.monials .stars img{
+    width: 40px;
+    height: 40px;
+}
+.monials .comment{
+    position: relative;
+    width: 600px;
+    margin: auto;
+    text-align: justify;
+    font-size: 18px;
+}
+.monials .comment span{
+    position: absolute;
+    right: 10px;
+    bottom: -10px;
+}
+  </style>
+</head>
+
+<body>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide monials">
+        
+        <img src="imgs/client.png" alt="">
+        <div class="stars">
+            <img src="imgs/star.png" alt="">
+            <img src="imgs/star.png" alt="">
+            <img src="imgs/star.png" alt="">
+            <img src="imgs/star.png" alt="">
+            <img src="imgs/star.png" alt="">
+        </div>
+        <div class="comment" id="">
+            <p>
+                I was recommended Connect U Solar by a friend. I am glad that I gave it a go. They were professional in assessing my needs and proposing suitable option. I appreciate their efficiency in installing the solution.
+            </p>
+            <span>
+                <b> MARK </b>  / Residential solar
+            </span>
+        </div>
+      </div>
+      <div class="swiper-slide monials">
+        <img src="imgs/client.png" alt="">
+        <div class="stars">
+            <img src="imgs/star.png" alt="">
+            <img src="imgs/star.png" alt="">
+            <img src="imgs/star.png" alt="">
+            <img src="imgs/star.png" alt="">
+            <img src="imgs/star.png" alt="">
+        </div>
+        <div class="comment" id="">
+            <p>
+                I was recommended Connect U Solar by a friend. I am glad that I gave it a go. They were professional in assessing my needs and proposing suitable option. I appreciate their efficiency in installing the solution.
+            </p>
+            <span>
+                <b> MARK </b>  / Residential solar
+            </span>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      loop:true
+    });
+  </script>
+</body>
+
+</html>

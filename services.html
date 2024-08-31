@@ -1,0 +1,175 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+  <style>
+    .MySwiper1 {
+    width: 100%;
+    height: 90%;
+  }
+
+  .swiper-slide1 {
+    text-align: center;
+    font-size: 18px;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    height: 220px;
+    width: 80px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+  }
+
+  
+ 
+  .swiper.mySwiper1{
+    height: 200px;
+    width: 90%;
+  }
+  </style>
+</head>
+
+<body>
+  <!-- Swiper -->
+  <div class="swiper mySwiper1 ">
+    <div class="swiper-wrapper">
+       
+        <div class="swiper-slide swiper-slide1" style="background-image: url('./imgs/protectionder.png');">
+            <h4>
+                SURGE PROTECTION
+            </h4>
+        
+        </div>
+        <div class="swiper-slide swiper-slide1" style="background-image: url('./imgs/saffety_switch.png');">
+            <h4>
+                SAFETY SWITCHES
+        
+            </h4>
+        
+        </div>
+        <div class="swiper-slide swiper-slide1" style="background-image: url('./imgs/energy.png');">
+            <h4>
+                EMERGENCY ELECTRICAL
+            </h4>
+        
+        </div>
+        <div class="swiper-slide swiper-slide1" style="background-image: url('./imgs/light.png');">
+            <h4>
+                LIGHTING
+            </h4>
+        
+        </div>
+        <div class="swiper-slide swiper-slide1" style="background-image: url('./imgs/fans.png');">
+            <h4>
+                CEILING FANS
+            </h4>
+        
+        </div>
+        <div class="swiper-slide swiper-slide1" style="background-image: url('./imgs/smoke.png');">
+            <h4>
+                SMOKE ALARMS
+            </h4>
+        
+        </div>
+        <div class="swiper-slide swiper-slide1" style="background-image: url('./imgs/elec.png');">
+            <h4>
+                ELECTRICAL HEATING
+            </h4>
+        
+        </div>
+        <div class="swiper-slide swiper-slide1" style="background-image: url('./imgs/data.png');">
+            <h4>
+                DATA INSTALLATION
+            </h4>
+        </div>
+        <div class="swiper-slide swiper-slide1" style="background-image: url('./imgs/usb.png');">
+            <h4>
+                POWER POINTS, SWITCHES, USB
+            </h4>
+        </div>
+        <div class="swiper-slide swiper-slide1" style="background-image: url('./imgs/exhaust.png');">
+            <h4>
+                EXHAUST FANS
+            </h4>
+        </div>
+        <div class="swiper-slide swiper-slide1" style="background-image: url('./imgs/roof.png');">
+            <h4>
+                ROOF EXHAUST FANS
+            </h4>
+        </div>
+        
+      
+        <div class="swiper-slide swiper-slide1" style="background-image: url('./imgs/home_rew.png');">
+            <h4>
+                HOME REWIRING
+        
+            </h4>
+        </div>
+        <div class="swiper-slide swiper-slide1" style="background-image: url('./imgs/checks.png');">
+            <h4>
+                HOME SAFETY CHECKS
+        
+            </h4>
+        </div>
+    </div>
+
+    <div class="swiper-pagination swiper-pagination1"></div>
+  </div>
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper1", {
+
+        loop: true,
+        loopFillGroupWithBlank: true,
+        spaceBetween: 20,
+        centeredSlides: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination1",
+            clickable: true,
+        },
+        breakpoints: {
+            800: {
+                slidesPerView: 3,
+                slidesPerGroup: 3,
+            },
+            200: {
+                slidesPerView: 3,
+                slidesPerGroup: 3,
+            }
+        }
+    });
+</script>
+</body>
+
+</html>

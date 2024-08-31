@@ -1,0 +1,1223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+.decor{
+    width: 180px;
+    height: 5px;
+    background-color: #fcc001;
+    border-radius: 5px;
+    margin: auto;
+}
+.white{
+    width: 100%;
+    height: 140px;
+    background-color: white;
+}
+p span{
+    font-weight: bolder;
+}
+/**************************** Header Styling **********************/
+
+/*----------------------------Top -----------------------------*/
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px ;
+    position: fixed ;
+    background-color: white;
+    z-index: 1000;
+    width: 100%;
+    justify-content: center;
+    
+    box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.2);
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.relative_logo {
+    position: absolute;
+    right: 45%;
+    left: 45%;
+    width: 10%;
+    top: 18px;
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+}
+
+.logos img {
+    width: 170px;
+    height: 50px;
+    margin: 0px 10px;
+}
+
+.header .info {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+.header .info p {
+    margin: 0px 20px;
+    display: flex;
+    align-items: center;
+}
+
+
+.header .info p img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/*---------------------------------------- End ----------------------------*/
+
+/*-------------------------------------Nav bar -------------------------------*/
+.listbtn{
+    display: none;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px 0px;
+}
+
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.4s;
+    margin: 0px 20px;
+    padding-bottom: 30px;
+}
+
+nav ul li a img {
+    width: 15px;
+    height: 10px;
+}
+
+nav ul li a:hover {
+    color: #20b6f8;
+}
+
+.about_list,
+.career_list,
+.services_list,
+.product_list {
+    position: relative;
+    
+}
+.swiper-button-prev:after,.swiper-button-prev:after{
+    color: #fcc001;
+}
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    color: #fcc001;
+}
+
+
+.about_list ul,
+.career_list ul,
+.services_list ul,
+.product_list ul {
+    display: none;
+}
+
+.about_list.active ul,
+.career_list.active ul,
+.services_list.active ul,
+.product_list.active ul {
+    position: absolute;
+    top: 50px;
+    left: -80px;
+    background-color: rgb(231, 231, 231);
+    width: 500px;
+    height: 150px;
+    display: flex;
+    align-items: space-around;
+    justify-content: flex-start;
+    list-style-type: circle;
+    list-style-position: inside;
+    padding: 10px;
+    z-index: 10000000;
+}
+
+.about_list.active ul div,
+.career_list.active ul div,
+.services_list.active ul div,
+.product_list.active ul div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+}
+
+.about_list.active ul div li,
+.career_list.active ul div li,
+.services_list.active ul div li,
+.product_list.active ul div li {
+    margin: 5px 0px;
+}
+
+/*-------------------------------------End-------------------------------------------*/
+
+/********************************************* End Header Styling ************************************/
+
+
+/*********************************************** HomE Styling **************************/
+.home {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    height: 80vh;
+}
+
+.home .txt {
+    font-size: 25px;
+    width: 600px;
+    text-align: left;
+    line-height: 45px;
+}
+.home.home2 .txt{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.home.home2 .txt button{
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home .picture img{
+    height: 400px;
+}
+.home .txt button {
+    border: none;
+    background-color: #fcc001;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    transition: all 0.3s;
+    width: 350px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home .txt button:hover {
+    color: black;
+    background-color: white;
+    border: solid 3px #fcc001;
+    cursor: pointer;
+}
+
+.parent {
+    background: #eee;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    height: 80vh;
+    z-index: -1;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fond {
+    margin-top: 100px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#parent {
+    width: 100%;
+    height: 280px;
+}
+
+.title {
+    text-align: center !important;
+    padding: 40px;
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+}
+#whoweare .title,#whatwedo .title{
+    color: #000;
+}
+
+.first {
+    background-color: #fcc001;
+}
+.second{
+    background-color: #83b629;
+}
+.mission,
+.instalation, 
+.why,
+.services,
+.projects,
+.about_content, 
+.monials,
+.benifits
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+    padding: 30px 0px;
+}
+
+.mission .main{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0px;
+}
+.mission .main div{
+    width: 40%;
+    font-size: 19px;
+    font-weight: 100;
+    text-align: justify;
+    line-height: 35px;
+}
+.mission .main div span{
+    font-weight: 900;
+}
+.mission .main div h3{
+    text-align: center;
+    margin: 10px;
+}
+.mission div a,.why  div a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #fcc001;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+.why h1, 
+.instalation h3,
+.services h1,
+.instalation h1
+{
+    text-align: center;
+    margin: 15px;
+}
+.instalation{
+    padding: 30px 0px;
+}
+.why .main{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0px;
+}
+.why .main img{
+    width: 18%;
+}
+.why  div a{
+    color: #83b629;
+}
+.third{
+    background-color: #20b6f8;
+}
+.instalation .main{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0px;
+}
+.instalation .main div{
+    width: 27%;
+   text-align: center;
+}
+.instalation .main div p{
+    text-align: justify;
+    font-weight: 100;
+}
+
+.istalation_title{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px;
+    text-align: center !important;
+}
+.services_parent{
+    background-color: #eee;
+}
+.services{
+    text-align: center;
+}
+.services .main{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.services .main .item {
+    width: 240px;
+    height: 250px;
+    border-radius: 40px;
+    
+
+    text-align: justify;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+}
+.services .main .item .child{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 40px;
+    height: 100%;
+    width: 100%;
+    font-size: 13px;
+    padding: 20px;
+}
+.services .main .item:first-child{
+    background-image: url('../imgs/services2.jpg');  
+}
+.services .main .item:nth-child(2){
+    background-image: url('../imgs/bg.jpg');
+}
+.services .main .item:nth-child(3){
+    background-image: url('../imgs/services3.jpg');
+}
+.services .main div h5{
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    width: max-content;
+    padding-bottom: 10px;
+}
+.services .main div:first-child h5{
+    border-bottom: #83b629 solid 2px;
+}
+.services .main div:nth-child(2) h5{
+    border-bottom: solid #20b6f8 2px;
+}
+.services .main div:nth-child(3) h5{
+    border-bottom: #fcc001 solid 2px;
+}
+#ser{
+    height: 330px;
+    width: 100%;
+    border: none;
+    padding: 30px;
+}
+.projects p{
+    text-align: center;
+    font-size: 20px;
+}
+.projects iframe{
+    width: 100%;
+    height: 300px;
+}
+#regForm {
+    background-color: #ffffff;
+    margin: 40px auto;
+    padding: 30px;
+    width: 50%;
+    min-width: 300px;
+    border-radius: 20px;
+  }
+  
+  h1 {
+    text-align: center;  
+  }
+  #regForm h1{
+    margin: 10px 0px;
+  }
+  #regForm input {
+    padding: 10px;
+    width: 90%;
+    font-size: 17px;
+    border: 1px solid #aaaaaa;
+    border-radius: 11px;
+    outline: none;
+    margin: 20px 0px;
+  }
+  #regForm input.radio_type{
+    width: 20px !important;
+  }
+  
+  /* Mark input boxes that gets an error on validation: */
+  input.invalid {
+    background-color: red;
+  }
+  
+  /* Hide all steps by default: */
+  .tab {
+    display: none;
+    margin: 20px auto;
+    width: 80%;
+  }
+  
+  button {
+    background-color: #83b629;;
+    color: #ffffff;
+    border: none;
+    height: 50px;
+    width: 130px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 11px !important;
+  }
+  .btns{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  #prevBtn {
+    background-color: #bbbbbb;
+  }
+  
+  /* Make circles that indicate the steps of the form: */
+  .step {
+    width: 20%;
+    height: 15px;
+    background-color: #bbbbbb;
+    border: none;  
+    display: inline-block;
+    opacity: 1;
+  }
+  .progress{
+    width: 100%;
+    margin: auto 0px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .step.active {
+    opacity: 1;
+  }
+  
+  /* Mark the steps that are finished and valid: */
+  .step.finish {
+    background-color: #fcc001;
+  }
+  .nice-radio{
+      display: flex;
+      justify-content: flex-start;
+  }
+  .formulaire{
+    background-color: #20b6f8;
+    padding: 20px;
+    margin: 20px 0px;
+  }
+  .formulaire h4{
+    text-align: center;
+    color: white;
+    padding: 20px;
+  }
+
+/**************************************** End Home Styling ****************************/
+
+.aboutus-parent{
+    background-color: #fcc001;
+}
+.aboutus{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid #fcc001 2px;
+    padding: 0px 20px;
+    width: 90%;
+    margin: auto;
+    height: 300px;
+    margin: 30px auto;
+}
+.aboutus h1{
+    color: white;
+    font-size: 50px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.aboutus div:first-child p{
+    font-size: 17px;
+    color: white;
+    
+}
+.aboutus div:first-child{
+    width: 35%;
+}
+.ver-text{
+    transform: rotate(-90deg);
+    font-size: 50px;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.7);
+    letter-spacing: 5px;
+}
+.aboutus div img{
+    height: 310px;
+}
+.about_content div{
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 0px;
+    align-items: center;
+    
+}
+.about_content div .title{
+    font-size: 50px;
+}
+.about_content div .desc{
+    width: 70%;
+    font-size: 20px;
+    line-height: 40px;
+}
+.about_content div img{
+    height: 100px;
+}
+.scrol-down{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px 0px;
+}
+.scrol-down i{
+    color: #fcc001;
+    font-size: 30px;
+}
+.monials-parent{
+    width: 90%;
+    margin: auto;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 20px;
+    border: #fcc001 solid 2px;
+}
+.monials-parent iframe{
+    height: 100%;
+    width: 80%;
+    margin: 20px auto;
+}
+.monials-parent .title{
+    color: black;
+    font-size: 40px;
+    padding: 0;
+}
+.contactus{
+    background-color: #000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+    margin: 20px 0px;
+}
+.contactus.roles{
+    background-color: white;
+    color: #000;
+    border: #20b6f8 solid 2px;
+    width: 90%;
+    margin: auto;
+}
+.contactus .title{
+    font-size: 40px;
+    margin: 20px;
+    padding: 0px;
+    color: white;
+}
+.contactus span{
+    width: 200px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #fcc001;
+    margin: auto;
+}
+.contactus.roles span{
+    background-color: #20b6f8;
+}
+.contactus .sub-title{
+    font-size: 25px;
+    padding: 10px;
+}
+.contactus .main{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    font-size: 18px;
+}
+.contactus .main div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 25px 15px;
+    border-radius: 20px;
+    width: 350px;
+}
+.contactus .main div:first-child{
+    border: solid #fcc001 2px;
+}
+.contactus .main div:nth-child(2){
+    border: solid #20b6f8 2px;
+}
+.contactus .main div:last-child{
+    border: solid #fcc001 2px;
+}
+.contactus.roles form{
+    padding: 40px 0px;
+    width: 700px;
+    margin: auto;
+    text-align: center;
+}
+.contactus.roles form .input-parent{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0px;
+}
+.contactus.roles form .input-parent div{
+    border-bottom: 3px #20b6f8 solid;
+}
+.contactus.roles form .input-parent div input,.contactus.roles form .input-parent div select{
+    outline: none;
+    border: none;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.contactus.roles form .input-parent div option{
+    border: none;
+    background-color: #eee;
+}
+.contactus.roles form button{
+    border: none;
+    text-align: center;
+    margin: auto;
+    background-color: #20b6f8;
+    color: white;
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+/********************************** END ABOUT STYLING*************************************************/
+
+
+/*********************************** CAREER STYLING *************************************/
+
+.career-parent{
+    background-color: #20b6f8 !important;
+}
+.aboutus.career{
+    border: #20b6f8 solid 2px;
+}
+.map{
+    display: flex;
+    justify-content: center;
+}
+
+.aboutus.career h1{
+    color: white;
+}
+.aboutus.career div:nth-child(2){
+    position: relative;
+    height: 100%;
+   
+}
+.aboutus.career div:nth-child(2){
+    height: 100%;
+    background-color: #fff;
+}
+.aboutus.career div:nth-child(2) p{
+    font-size: 50px;
+    color: white;
+    padding: 40px 20px;
+    font-weight: 900;
+    text-align: center;
+    color: #fcc001;
+}
+.aboutus.career div:nth-child(2) p span:first-child{
+    color: #20b6f8;
+}
+
+.aboutus.career div:nth-child(2) p span:last-child{
+    color: #83b629;
+}
+.aboutus.career div:nth-child(3){
+    width: 15%;
+}
+.scrol-down.career i{
+    color: #20b6f8;
+}
+.presentation{
+    width: 90%;
+    padding: 40px 0px;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto;
+    height: 400px;
+    align-items: center;
+}
+.presentation .picture{
+    width: 35%;
+    position: relative;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.presentation .picture p{
+    font-size: 40px;
+    z-index: 100;
+    color: white;
+}
+.presentation .picture.with-border{
+    border: #20b6f8 2px solid;
+}
+.presentation .picture img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -15px;
+    left: -15px;
+}
+.presentation .picture.person img{
+    height: 400px;
+}
+.presentation .txt{
+    font-size: 20px;
+    text-align: justify;
+    width: 55%;
+}
+.presentation .txt button{
+    color: white;
+    background-color: #20b6f8;
+    font-weight: 700;
+    border: none;
+    height: 50px;
+    width: 250px;
+    font-size: 22px;
+    margin: 20px 200px;
+    border-radius: 11px;
+    cursor: pointer;
+    
+}
+.presentation .txt ul{
+    list-style-position: inside;
+}
+.presentation .txt img{
+    height: 250px;
+    width: 250px;
+    margin:  10px;
+    text-align: center;
+}
+
+/********************************** END CAREER STYLING *****************************************/
+
+
+/******************************* SERVICES STYLING ****************************/
+.presentation .picture.with-border.services{
+    border: #fcc001 2px solid;
+}
+.presentation .picture.with-border.services.right img{
+
+    left: 15px !important;
+    
+}
+.benifits{
+    text-align: center;
+}
+.benifits h1{
+    margin: 15px;
+}
+.benifits .content{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+}
+.benifits .content .parent{
+    width: 330px;
+    height: 480px;
+    position: relative;
+    background-color: white;
+}
+.benifits .content div img{
+    width: 330px;
+    height: 250px;
+}
+.benifits .content .parent p{
+    text-align: justify;
+    margin: 20px 0px;
+    font-size: 17px;
+}
+.benifits .content .bene-img{
+    position: relative;
+}
+.benifits .content .bene-img p{
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    width: 80%;
+}
+.benifits .content div button{
+    height: 50px;
+    width: 170px;
+    font-size: 20px;
+    border: none;
+    background-color: #fcc001;
+    color: white;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 20px;
+    right: 70px;
+    font-weight: 900;
+}
+/************************** END SERVICES STYLING **************************/
+
+
+/******************************* PRODUCTS STYLING ******************************/
+
+.pro-parent{
+    border: #83b629 solid 2px;
+    background-color: #83b629;
+}
+.aboutus.pro {
+    border: none;
+}
+.aboutus.pro h1{
+    color: white;
+}
+.scrol-down.pro i{
+    color: #83b629;
+}
+.offer-parent{
+    display: flex;
+}
+.offers{
+    display: flex;
+    background-color: #eee;
+    border: 2px #fcc001 solid;
+    width: 70%;
+    margin: 20px auto;
+    justify-content: space-around;
+    text-align: justify;
+    padding: 20px;
+}
+.offer-parent .offers{
+    flex-direction: column;
+    width: 25%;
+    align-items: space-between;
+}
+.offer-parent .offers button{
+    background-color: #fcc001;
+    color: black;
+    font-weight: 800;
+    margin: 15px auto;
+    border-radius: 20px;
+}
+.offers.green{
+    border: 2px #83b629 solid;
+}
+.offers.blue{
+    border: solid #20b6f8 2px;
+}
+.offers .pic button{
+    background-color: #fcc001;
+    color: white;
+    border: none;
+    border-radius: 11px;
+    width: 180px;
+    height: 40px;
+    margin: 20px 50px;
+}
+.offers .txt span{
+    font-size: 25px;
+    color: #fcc001;
+}
+.offers.green .txt span{
+    color: #83b629;
+}
+.offers.blue .txt span{
+    color: #20b6f8;
+}
+/************************************ END PRODUCT STYLING **********************/
+
+
+
+
+/************************************* Footer Styling ***********************************/
+.footer-parent{
+    border-bottom: #fcc001 solid 3px;
+    border-top: #fcc001 solid 3px;
+}
+.footer {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0px;
+    
+}
+
+.footer div:first-child h4 {
+    border-bottom: 2px #83b629 solid;
+    margin: 15px 0px;
+}
+
+.footer div:nth-child(2) h4 {
+    border-bottom: 2px #20b6f8 solid;
+    margin: 15px 0px;
+}
+
+.footer div:nth-child(3) h4 {
+    border-bottom: 2px #fcc001 solid;
+    margin: 15px 0px;
+}
+
+.footer div ul {
+    list-style-type: none;
+}
+
+.footer div ul li {
+    margin: 8px 0px;
+}
+
+.footer div ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+.footer div ul li a i {
+    margin-right: 10px;
+}
+
+.footer div img {
+    height: 80px;
+    width: 260px;
+}
+
+.footer div span {
+
+    display: flex;
+    justify-content: center;
+}
+
+.footer div span i {
+    font-size: 30px;
+    margin: 0px 10px;
+}
+
+.copyright {
+    width: 90%;
+    margin: auto;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.copyright p a{
+    text-decoration: none;
+    color: #000;
+}
+
+/********************************* End Footer Styling ****************************/
+
+
+.badgeparent.active{
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 100000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.badgeparent{
+    display: none;
+}
+.badge_child{
+    width: 90%;
+    height: 90%;
+    background-color: #83b629;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    border-radius: 11px;
+    align-items: center;
+}
+.badge_child form{
+
+    top: -10px;
+}
+.badge_child i{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+.formulaire.pop{
+    background-color: #83b629;
+    position: relative;
+    height: 950px;
+    width: 100%;
+    margin: 50px 0px;
+    z-index: -2;
+}
+.popup{
+   background-color: white;
+   position: absolute;
+   width: 70%;
+   margin: auto;
+   border-radius: 11px;
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   left: 15%;
+   box-shadow: rgba(0, 0, 0, 0.20) 4px 3px 15px;
+   top: -40px;
+   padding: 20px;
+   font-size: 17px;
+   z-index: 1;
+}
+.popup h1{
+    margin: 20px;
+}
+.popup div{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+}
+.popup div input{
+    border: none;
+    border-bottom: solid 2px #83b629;
+    outline: none;
+    background-color: white;
+    font-size: 16px;
+}
+form div input:focus{
+    outline: none;
+}
+textarea:focus{
+    outline: none;
+}
+textarea{
+    border: #83b629 solid 2px ;
+    border-radius: 11px;
+    padding: 9px;
+}
+label{
+    margin: 8px 0px;
+    font-size: 20px;
+}
+.btn{
+    text-align: right;
+}
+.btn button{
+    border: none;
+    color: white;
+    background-color: #83b629;
+    padding: 10px 40px;
+    border-radius: 12px !important;
+}
+.coockies-parent{
+    height: 80vh;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.coockies{
+    width: 500px;
+    height: 200px;
+    background-color: #eee;
+    border-radius: 20px;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+.coockies-parent.disable{
+    display: none;
+}
+.coockies p{
+    text-align: justify;
+}
+.coockies button{
+    border-radius: 11px;
+    background-color: #20b6f8;
+}

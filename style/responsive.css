@@ -1,0 +1,171 @@
+@media screen and (max-width: 800px) {
+    /********************* Headder Styling *******************************/
+    .top{
+        display: none;
+    }
+    .listbtn{
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        padding: 3px;
+
+    }
+    .listbtn.active span:nth-child(2){
+        visibility: hidden;
+    }
+    .listbtn.active span:first-child, .listbtn.active span:last-child{
+        transition: all 1s;
+    }
+    .listbtn.active span:first-child{
+        transform: rotate(45deg) translateY(11.5px) ;
+        
+    }
+    .listbtn.active span:last-child{
+        transform: rotate(-45deg) translateY(-11.5px) ;
+    
+    }
+    .listbtn span{
+        width: 40px;
+        height: 3px;
+        background-color: black;
+        border-radius: 3px;
+        margin: 3px;
+        
+    }
+    nav{
+        display: none;
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        min-height: 80px;
+    }
+    .white{
+        height: 80px;
+    }
+    nav.active{
+        display: flex;
+        height: 80vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    nav.active ul{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    nav.active ul li a{
+        font-size: 22px;
+        margin: 8px 0px;
+    }
+    nav.active ul li a img{
+        display: none;
+    }
+    /******************************** End Header Styling **********************************/
+
+
+    /******************************* Home Styling ***************************************/
+
+    .formulaire{
+        margin: 0px;
+    }
+    #regForm{
+        width: 90%;
+    }
+    #ser{
+        padding: 5px;
+    }
+    .instalation .main{
+        flex-direction: column;
+    }
+    .instalation .main div{
+        width: 90%;
+        margin: auto;
+    }
+    .services .main{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .services .main .item{
+        width: 90%;
+        margin: 20px auto;
+    }
+    .mission .main{
+        flex-direction: column;
+    }
+    .mission .main div{
+        width: 90%;
+        margin: auto;
+    }
+    .offer-parent {
+        flex-direction: column;
+    }
+    .offer-parent .offers{
+        margin: 10px auto;
+        width: 300px;
+    }
+    .aboutus{
+        flex-direction: column;
+        height: max-content;
+    }
+    .aboutus div img{
+        display: none;
+    }
+    .aboutus div:first-child{
+        width: 90%;
+    }
+    .about_content div{
+        flex-direction: column;
+    }
+    .about_content div img{
+        display: none;
+    }
+    #whatwedo{
+        justify-content: flex-end;
+    }
+    .contactus .main{
+        flex-direction: column;
+
+    }
+    .contactus .main div{
+        width: 90%;
+        margin: 20px auto;
+    }
+    .presentation{
+        flex-direction: column;
+    }
+    .presentation .picture{
+        width: 90%;
+        margin: 20px  auto;
+
+    }
+    .presentation .txt{
+        width: 90%;
+        margin: auto;
+    }
+    .presentation{
+        height: max-content;
+        margin: 20px 0px ;
+    }
+    /********************************* End Home Styling ************************************/
+
+    /********************************* Footer Styling ********************************************/
+
+    .footer{
+        flex-direction: column;
+        font-size: 20px;
+    }
+    .footer h4{
+        width: max-content;
+        padding: 0px 20px 0px 0px;
+    }
+    .footer div ul li a {
+        font-size: 20px;
+    }
+
+
+    /********************************* End Footer Styling **************************/
+}
